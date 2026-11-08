@@ -3,61 +3,160 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Deviens testeur d'Enfin lu sur Android</title>
-<meta name="description" content="Teste Enfin lu sur ton téléphone Android avant sa sortie sur Google Play : 3 étapes, 5 minutes, puis 14 jours avec l'appli.">
-<meta property="og:title" content="Deviens testeur d'Enfin lu sur Android">
-<meta property="og:description" content="Les grands classiques en épisodes de 2 minutes. Aide-moi à sortir l'appli sur Google Play : 3 étapes, 5 minutes.">
-<meta property="og:image" content="https://enfinlu.fr/icone-512.png">
+<title>Enfin lu · Deviens testeur sur Android</title>
+<meta name="description" content="Les grands classiques, comme une&nbsp;série. Teste Enfin lu gratuitement sur Android avant sa sortie sur Google Play : 3 étapes, 5 minutes.">
+<meta property="og:title" content="Enfin lu · Deviens testeur sur Android">
+<meta property="og:description" content="Les grands classiques en épisodes de 2 minutes. Gratuit. Aide-moi à sortir l'appli sur Google Play : 3 étapes, 5 minutes.">
+<meta property="og:image" content="https://enfinlu.fr/media-testeurs/trailer-affiche.webp">
 <meta property="og:url" content="https://enfinlu.fr/testeurs">
-<meta name="theme-color" content="#0f131b">
+<meta name="theme-color" content="#0b0f17">
+<meta name="color-scheme" content="dark">
 <link rel="icon" href="icone-192.png">
 <style>
   @font-face{font-family:'Bodoni Moda';font-style:italic;font-weight:400 900;font-display:swap;src:url(bodoni-moda-latin-opsz-italic.woff2) format('woff2')}
   @font-face{font-family:'Schibsted Grotesk';font-style:normal;font-weight:400 900;font-display:swap;src:url(schibsted-grotesk-latin-wght-normal.woff2) format('woff2')}
   @font-face{font-family:'Spectral';font-style:normal;font-weight:400;font-display:swap;src:url(spectral-latin-400-normal.woff2) format('woff2')}
-  @font-face{font-family:'Spectral';font-style:italic;font-weight:400;font-display:swap;src:url(spectral-latin-400-italic.woff2) format('woff2')}
-  :root { --bg:#f1f3f7; --card:#ffffff; --ink:#172033; --muted:#5c6679; --line:#d5dbe6; --acc:#2f5fd0; --acc-ink:#ffffff; --gold:#94650a; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#0f131b; --card:#161c28; --ink:#e9edf5; --muted:#97a1b4; --line:#2c3549; --acc:#82a9ff; --acc-ink:#0f131b; --gold:#e6cd8c; }
+  :root {
+    --bg:#0b0f17; --bg2:#111827; --card:#161d2b; --ink:#eef1f7; --muted:#a3adc2; --line:#283247;
+    --acc:#82a9ff; --acc-ink:#0b0f17; --gold:#e6cd8c; --gold-deep:#c9a54e;
+    --sans:'Schibsted Grotesk', system-ui, sans-serif; --serif:'Spectral', Georgia, serif; --display:'Bodoni Moda', Georgia, serif;
   }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.55 'Spectral', Georgia, serif; }
-  main { max-width:620px; margin:0 auto; padding:28px 20px 56px; }
-  .logo { display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit; }
-  .logo img { width:44px; height:44px; border-radius:50%; }
-  .logo span { font:italic 600 26px/1 'Bodoni Moda', Georgia, serif; }
-  .logo b { color:var(--acc); font-weight:600; }
-  h1 { font:italic 600 32px/1.15 'Bodoni Moda', Georgia, serif; margin:28px 0 10px; }
-  .lead { margin:0 0 6px; }
-  .sub { color:var(--muted); margin:0 0 26px; }
-  h2 { font:700 13px/1.2 'Schibsted Grotesk', system-ui, sans-serif; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); margin:34px 0 12px; }
-  ol.steps { list-style:none; margin:0; padding:0; counter-reset:s; }
-  ol.steps > li { counter-increment:s; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 18px 18px 64px; margin:0 0 12px; position:relative; }
-  ol.steps > li::before { content:counter(s); position:absolute; left:18px; top:18px; width:32px; height:32px; border-radius:50%; background:var(--acc); color:var(--acc-ink); font:700 16px/32px 'Schibsted Grotesk', system-ui, sans-serif; text-align:center; }
-  .steps h3 { font:700 18px/1.3 'Schibsted Grotesk', system-ui, sans-serif; margin:3px 0 6px; }
-  .steps p { margin:0 0 12px; }
-  .btn { display:inline-block; background:var(--acc); color:var(--acc-ink); text-decoration:none; font:700 16px/1 'Schibsted Grotesk', system-ui, sans-serif; padding:13px 18px; border-radius:10px; }
-  .btn:focus-visible { outline:3px solid var(--gold); outline-offset:2px; }
-  .warn { border-left:3px solid var(--gold); padding:4px 14px; margin:22px 0 0; }
-  ul { padding-left:20px; margin:8px 0; }
-  li { margin:6px 0; }
-  details { border-top:1px solid var(--line); padding:12px 0; }
-  details:last-of-type { border-bottom:1px solid var(--line); }
-  summary { cursor:pointer; font:600 16px/1.4 'Schibsted Grotesk', system-ui, sans-serif; }
-  details p { margin:8px 0 0; color:var(--muted); }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; color:var(--ink); font:18px/1.6 var(--serif);
+    background: radial-gradient(1200px 600px at 50% -200px, #1b2a4a 0%, rgba(27,42,74,0) 70%), var(--bg); }
+  main { max-width:640px; margin:0 auto; padding:36px 20px 64px; }
   a { color:inherit; }
-  footer { margin-top:40px; color:var(--muted); font-size:15px; }
+  img { display:block; max-width:100%; }
+
+  /* En-tête */
+  .hero { text-align:center; }
+  .medal { width:84px; height:84px; margin:0 auto 14px; border-radius:50%; box-shadow:0 0 0 1px rgba(230,205,140,.35), 0 10px 40px rgba(230,205,140,.18); }
+  .brand { font:italic 600 52px/1 var(--display); margin:0; letter-spacing:.005em; }
+  .brand b { color:var(--acc); font-weight:600; }
+  .tagline { font:italic 400 21px/1.3 var(--display); color:var(--gold); margin:10px 0 18px; }
+  .pills { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin:0 0 24px; padding:0; list-style:none; }
+  .pills li { font:700 14px/1 var(--sans); letter-spacing:.02em; padding:9px 14px; border-radius:999px; border:1px solid var(--line); background:var(--bg2); }
+  .pills li.free { background:var(--gold); color:#1a1408; border-color:var(--gold); }
+  h1 { font:italic 600 34px/1.15 var(--display); margin:6px 0 10px; }
+  .intro { color:var(--muted); margin:0 auto 22px; max-width:520px; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:52px; background:var(--acc); color:var(--acc-ink); text-decoration:none; font:700 17px/1.1 var(--sans); padding:14px 22px; border-radius:12px; transition:transform .15s ease, box-shadow .15s ease; box-shadow:0 6px 20px rgba(130,169,255,.25); }
+  .btn:hover { transform:translateY(-1px); box-shadow:0 10px 26px rgba(130,169,255,.35); }
+  .btn:focus-visible, summary:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
+  .btn.gold { background:var(--gold); color:#1a1408; box-shadow:0 6px 20px rgba(230,205,140,.22); }
+
+  /* Vidéo */
+  .video { margin:34px 0 8px; border-radius:16px; overflow:hidden; border:1px solid var(--line); box-shadow:0 20px 60px rgba(0,0,0,.45); background:#000; aspect-ratio:16/9; }
+  .video video { width:100%; height:100%; display:block; object-fit:cover; }
+  .hint { text-align:center; color:var(--muted); font:14px/1.4 var(--sans); margin:0; }
+
+  /* Sections */
+  h2 { font:700 13px/1.2 var(--sans); letter-spacing:.12em; text-transform:uppercase; color:var(--gold); text-align:center; margin:52px 0 6px; }
+  .h2big { font:italic 600 28px/1.2 var(--display); text-align:center; margin:0 0 22px; }
+
+  /* Livres */
+  .books { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0; padding:0; list-style:none; }
+  .book { text-align:center; }
+  .cover { aspect-ratio:2/3; border-radius:6px 10px 10px 6px; overflow:hidden; box-shadow:0 12px 30px rgba(0,0,0,.5), inset 4px 0 0 rgba(0,0,0,.25); transition:transform .2s ease; }
+  .book:nth-child(1) .cover { transform:rotate(-2deg); } .book:nth-child(3) .cover { transform:rotate(2deg); }
+  .book:hover .cover { transform:rotate(0) translateY(-4px); }
+  .cover img { width:100%; height:100%; object-fit:cover; }
+  .cover.drawn { background:#44502a; display:flex; flex-direction:column; justify-content:center; padding:10px; border:2px solid #44502a; outline:1px solid #ecc16a; outline-offset:-8px; }
+  .cover.drawn .t { font:italic 600 20px/1.1 var(--display); color:#f6eccb; }
+  .cover.drawn .a { font:600 10px/1.2 var(--sans); letter-spacing:.14em; text-transform:uppercase; color:#ecc16a; margin-top:10px; }
+  .book h3 { font:700 15px/1.25 var(--sans); margin:14px 0 2px; }
+  .book p { font:14px/1.35 var(--sans); color:var(--muted); margin:0; }
+  .tag { display:inline-block; margin-top:6px; font:700 11px/1 var(--sans); letter-spacing:.06em; text-transform:uppercase; color:var(--acc); }
+  .soon { text-align:center; margin:26px 0 0; }
+  .soon p { font:italic 400 19px/1.3 var(--display); color:var(--gold); margin:0 0 10px; }
+  .soon ul { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; list-style:none; padding:0; margin:0; }
+  .soon li { font:600 13px/1 var(--sans); color:var(--muted); padding:8px 12px; border:1px dashed var(--line); border-radius:999px; }
+
+  /* Captures */
+  .shots { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:0; padding:0; list-style:none; }
+  .shots img { width:100%; max-width:250px; margin:0 auto; filter:drop-shadow(0 18px 30px rgba(0,0,0,.5)); }
+  .shots p { text-align:center; font:600 15px/1.35 var(--sans); margin:12px 0 0; }
+
+  /* Étapes */
+  ol.steps { list-style:none; margin:0; padding:0; counter-reset:s; }
+  ol.steps > li { counter-increment:s; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 20px 20px 72px; margin:0 0 14px; position:relative; }
+  ol.steps > li::before { content:counter(s); position:absolute; left:20px; top:20px; width:36px; height:36px; border-radius:50%; background:var(--gold); color:#1a1408; font:800 18px/36px var(--sans); text-align:center; }
+  .steps h3 { font:700 19px/1.3 var(--sans); margin:4px 0 6px; }
+  .steps p { margin:0 0 14px; color:var(--muted); }
+  .warn { background:rgba(230,205,140,.08); border:1px solid rgba(230,205,140,.35); border-radius:12px; padding:14px 16px; margin:6px 0 0; }
+  .days { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; list-style:none; padding:0; margin:0; }
+  .days li { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 14px; font:15px/1.4 var(--sans); color:var(--muted); }
+  .days strong { display:block; color:var(--ink); font-size:16px; margin-bottom:4px; }
+
+  /* Questions */
+  details { border-top:1px solid var(--line); padding:14px 0; }
+  details:last-of-type { border-bottom:1px solid var(--line); }
+  summary { cursor:pointer; font:600 17px/1.4 var(--sans); }
+  details p { margin:8px 0 0; color:var(--muted); }
+
+  .final { text-align:center; margin:44px 0 0; }
+  footer { margin-top:44px; text-align:center; color:var(--muted); font:14px/1.5 var(--sans); }
+
+  @media (max-width:520px) {
+    .brand { font-size:44px; } h1 { font-size:29px; } .h2big { font-size:24px; }
+    .books { gap:10px; } .cover.drawn .t { font-size:16px; }
+    .days { grid-template-columns:1fr; }
+    ol.steps > li { padding:18px 16px 18px 64px; } ol.steps > li::before { left:16px; top:18px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } .btn, .cover { transition:none; } }
 </style>
 </head>
 <body>
 <main>
-  <a class="logo" href="/"><img src="icone-192.png" alt=""><span>Enfin <b>lu</b></span></a>
+  <header class="hero">
+    <img class="medal" src="icone-192.png" alt="" width="84" height="84">
+    <p class="brand">Enfin <b>lu</b></p>
+    <p class="tagline">Les grands classiques, comme une&nbsp;série</p>
+    <ul class="pills" aria-label="En bref">
+      <li class="free">Gratuit</li><li>Sans pub</li><li>Sans inscription</li><li>Épisodes de 2 min</li>
+    </ul>
+    <h1>Deviens testeur, avant tout le monde</h1>
+    <p class="intro">Pour sortir sur Google Play, l'appli doit d'abord être testée par 12 personnes pendant 14 jours. Il te faut un téléphone Android et 5 minutes.</p>
+    <a class="btn gold" href="#etapes">Je deviens testeur</a>
+  </header>
 
-  <h1>Deviens testeur sur Android</h1>
-  <p class="lead">Enfin lu fait lire les grands classiques en épisodes de 2 minutes, avec les personnages, les décors et l'époque expliquée en chemin.</p>
-  <p class="sub">Pour sortir sur Google Play, l'appli doit d'abord être testée par 12 personnes pendant 14 jours. Il te faut un téléphone Android et 5 minutes.</p>
+  <div class="video">
+    <video src="media-testeurs/trailer.mp4" poster="media-testeurs/trailer-affiche.webp" autoplay muted loop playsinline controls preload="metadata" aria-label="Présentation d'Enfin lu en vidéo (13 secondes)"></video>
+  </div>
+  <p class="hint">13 secondes pour découvrir l'appli</p>
 
-  <h2>En 3 étapes</h2>
+  <h2>Déjà disponibles</h2>
+  <p class="h2big">Trois romans à lire en entier</p>
+  <ul class="books">
+    <li class="book">
+      <div class="cover"><img src="belami/7e3d5416170f896d.webp" alt="Couverture de Bel-Ami" loading="lazy"></div>
+      <h3>Bel-Ami</h3><p>Maupassant</p><span class="tag">Paris, 1885</span>
+    </li>
+    <li class="book">
+      <div class="cover"><img src="potbouille/33ce9635c6df2bc5.webp" alt="Couverture de Pot-Bouille" loading="lazy"></div>
+      <h3>Pot-Bouille</h3><p>Zola</p><span class="tag">Au bac 2027</span>
+    </li>
+    <li class="book">
+      <div class="cover drawn" role="img" aria-label="Couverture de La Guerre des boutons"><span class="t">La Guerre des boutons</span><span class="a">Louis Pergaud</span></div>
+      <h3>La Guerre des boutons</h3><p>Pergaud</p><span class="tag">Au village</span>
+    </li>
+  </ul>
+  <div class="soon">
+    <p>et beaucoup d'autres à paraître</p>
+    <ul>
+      <li>Le Comte de Monte-Cristo</li><li>Les Trois Mousquetaires</li><li>Le Tour du monde en 80 jours</li><li>Arsène Lupin</li><li>Les Misérables</li><li>Madame Bovary</li>
+    </ul>
+  </div>
+
+  <h2>Dans l'appli</h2>
+  <p class="h2big">Lire, comme si tu y étais</p>
+  <ul class="shots">
+    <li><img src="media-testeurs/lecture.webp" alt="Un épisode de Bel-Ami en cours de lecture, avec le décor de la rue" width="246" height="507" loading="lazy"><p>Le texte intégral, en épisodes de 2 minutes</p></li>
+    <li><img src="media-testeurs/cartes.webp" alt="Une carte « D'où vient ce mot ? » sur le mot gargote" width="246" height="507" loading="lazy"><p>Des cartes pour découvrir l'époque et les mots</p></li>
+  </ul>
+
+  <h2 id="etapes">En 3 étapes</h2>
+  <p class="h2big">Rejoindre le test</p>
   <ol class="steps">
     <li>
       <h3>Rejoins le groupe des testeurs</h3>
@@ -71,18 +170,18 @@
     </li>
     <li>
       <h3>Installe Enfin lu depuis Google Play</h3>
-      <p>L'appli s'installe comme n'importe quelle autre.</p>
+      <p>L'appli s'installe comme n'importe quelle autre, et elle est gratuite.</p>
       <a class="btn" href="https://play.google.com/store/apps/details?id=fr.enfinlu.app">Installer l'appli</a>
     </li>
   </ol>
-
   <p class="warn"><strong>Important&nbsp;:</strong> fais les 3 étapes avec le même compte Gmail, celui qui est connecté au Play Store de ton téléphone.</p>
 
-  <h2>Pendant 14 jours</h2>
-  <ul>
-    <li>Garde l'appli installée&nbsp;: si tu la désinstalles, tu ne comptes plus parmi les 12.</li>
-    <li>Ouvre-la de temps en temps et lis quelques épisodes, à ton rythme.</li>
-    <li>Dis-moi ce qui te plaît et ce qui coince&nbsp;: <a href="mailto:contact@enfinlu.fr">contact@enfinlu.fr</a>. Chaque remarque compte.</li>
+  <h2>Ensuite</h2>
+  <p class="h2big">Pendant 14 jours</p>
+  <ul class="days">
+    <li><strong>Garde l'appli</strong>Si tu la désinstalles, tu ne comptes plus parmi les 12.</li>
+    <li><strong>Lis à ton rythme</strong>Quelques épisodes de temps en temps suffisent.</li>
+    <li><strong>Dis-moi tout</strong>Ce qui te plaît, ce qui coince&nbsp;: <a href="mailto:contact@enfinlu.fr">contact@enfinlu.fr</a></li>
   </ul>
 
   <h2>Ça ne marche pas&nbsp;?</h2>
@@ -99,7 +198,15 @@
     <p>Le test Google Play ne concerne que les téléphones Android. Tu peux déjà lire Enfin lu sur <a href="/">enfinlu.fr</a>, depuis Safari, sans rien installer.</p>
   </details>
 
-  <footer>Merci pour ton aide. · <a href="/">enfinlu.fr</a> · <a href="confidentialite.html">Confidentialité</a></footer>
+  <div class="final"><a class="btn gold" href="#etapes">Je deviens testeur</a></div>
+
+  <footer>Merci pour ton aide&nbsp;!<br><a href="/">enfinlu.fr</a> · <a href="confidentialite.html">Confidentialité</a></footer>
 </main>
+<script>
+  // Si l'appareil demande moins d'animations, la vidéo attend qu'on la lance.
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var v = document.querySelector('video'); v.removeAttribute('autoplay'); v.pause();
+  }
+</script>
 </body>
 </html>
