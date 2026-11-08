@@ -72,9 +72,9 @@
    "fichier": "boutons.json",
    "epoque": "villages",
    "inclus": false,
-   "version": 3,
-   "taille": 1301050,
-   "empreinte": "2c1af6bf159a4927",
+   "version": 4,
+   "taille": 1301063,
+   "empreinte": "272b41eb4b82b739",
    "contenu": "Le roman entier (trois livres, 26 chapitres)",
    "couverture": "boutons/792dbba874105eea.webp"
   },
