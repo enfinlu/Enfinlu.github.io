@@ -7,7 +7,8 @@
       "namespace": "android_app",
       "package_name": "fr.enfinlu.app",
       "sha256_cert_fingerprints": [
-        "9B:66:28:39:92:91:8E:57:95:DD:54:DE:2D:C0:63:BC:8A:BF:0E:A9:FB:7C:35:BB:46:14:E8:44:2C:A3:74:F4"
+        "9B:66:28:39:92:91:8E:57:95:DD:54:DE:2D:C0:63:BC:8A:BF:0E:A9:FB:7C:35:BB:46:14:E8:44:2C:A3:74:F4",
+        "1D:8E:D4:1C:2A:7F:C1:31:11:9B:2F:B2:F9:6A:47:13:E4:F9:05:06:31:0F:77:39:27:C5:77:3C:68:D9:5E:50"
       ]
     }
   }
