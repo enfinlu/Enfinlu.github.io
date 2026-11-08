@@ -72,10 +72,11 @@
    "fichier": "boutons.json",
    "epoque": "villages",
    "inclus": false,
-   "version": 2,
-   "taille": 841806,
-   "empreinte": "afc37dc60ecdc408",
-   "contenu": "Le roman entier (trois livres, 26 chapitres)"
+   "version": 3,
+   "taille": 1301050,
+   "empreinte": "2c1af6bf159a4927",
+   "contenu": "Le roman entier (trois livres, 26 chapitres)",
+   "couverture": "boutons/792dbba874105eea.webp"
   },
   {
    "id": "horla",
