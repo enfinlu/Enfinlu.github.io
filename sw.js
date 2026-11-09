@@ -1,5 +1,5 @@
-/* Enfin lu : fonctionnement hors ligne, et ouverture immédiate (version 105) */
-const CACHE = 'enfinlu-v105';
+/* Enfin lu : fonctionnement hors ligne, et ouverture immédiate (version 105 ; v117 : voix enregistrée) */
+const CACHE = 'enfinlu-v117';   // v117 : la voix enregistrée n'est pas interceptée (voir plus bas)
 // v104 : les images des livres ont des noms tirés de leur contenu (belami/3f2a….webp) : une image donnée ne change
 // jamais. Elles sont rangées à part, et gardées d'une version de l'appli à l'autre.
 const LIVRES = 'enfinlu-livres';
@@ -91,6 +91,8 @@ self.addEventListener('fetch', (e) => {
   const u = new URL(r.url);
   if (u.origin !== location.origin) return;
   const nom = u.pathname.split('/').pop();
+  // v117 : la voix enregistrée (audio/<livre>/e000.mp3) : le navigateur la lit lui-même, par morceaux, depuis le site
+  if (/\.(mp3|m4a|ogg|opus)$/.test(nom)) return;
   const page = nom === '' || nom === 'index.html';
   // le programme : toujours la copie du téléphone (son nom change quand il change)
   if (PROG.test(nom)) {
