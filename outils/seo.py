@@ -39,7 +39,7 @@ IMAGE_ALT = 'Enfin lu, les grands classiques en épisodes de 2 minutes, sur un t
 
 # Comptes officiels d'Enfin lu (YouTube, TikTok, Instagram, X…), adresses complètes.
 # À remplir quand Guillaume les donne : ils aident Google à relier la marque au site.
-RESEAUX = ['https://www.youtube.com/@Enfinlu']
+RESEAUX = ['https://www.youtube.com/@Enfinlu', 'https://x.com/Enfinlu']
 
 DONNEES = {
     '@context': 'https://schema.org',
