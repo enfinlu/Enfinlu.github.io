@@ -1,0 +1,6 @@
+# Enfin lu · https://enfinlu.fr/
+User-agent: *
+Disallow: /outils/
+Disallow: /mesure/
+
+Sitemap: https://enfinlu.fr/sitemap.xml
