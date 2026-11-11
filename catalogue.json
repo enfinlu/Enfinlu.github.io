@@ -98,6 +98,25 @@
    "contenu": "La nouvelle entière (3 chapitres)"
   },
   {
+   "id": "couleur",
+   "titre": "La Couleur tombée du ciel",
+   "auteur": "H. P. Lovecraft",
+   "annee": 1927,
+   "points": 0,
+   "couleurs": [
+    "#2a2236",
+    "#c9a8f0"
+   ],
+   "resume": "Venu tracer un futur réservoir près d'Arkham, un géomètre découvre une lande grise où rien ne pousse, et un vieil homme lui raconte ce qui est arrivé à la ferme voisine après la chute d'une météorite.",
+   "fichier": "couleur.json",
+   "epoque": "anneesfolles",
+   "inclus": false,
+   "version": 1,
+   "taille": 169419,
+   "empreinte": "cf283879a896958b",
+   "contenu": "La nouvelle entière (5 chapitres)"
+  },
+  {
    "id": "horla",
    "titre": "Le Horla",
    "auteur": "Guy de Maupassant",
