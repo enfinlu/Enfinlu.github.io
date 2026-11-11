@@ -280,14 +280,19 @@
    "titre": "Les Trois Mousquetaires",
    "auteur": "Alexandre Dumas",
    "annee": 1844,
-   "points": 25000,
+   "points": 0,
    "couleurs": [
     "#1f3a6b",
     "#f3d27a"
    ],
-   "resume": "D’Artagnan monte à Paris pour devenir mousquetaire du roi.",
-   "fichier": null,
-   "epoque": "grandsiecle"
+   "resume": "En 1625, un jeune Gascon monte à Paris pour devenir mousquetaire du roi, se fait trois amis à la pointe de l'épée et se jette avec eux dans les intrigues de la reine et du cardinal.",
+   "fichier": "mousquetaires.json",
+   "epoque": "grandsiecle",
+   "inclus": false,
+   "version": 1,
+   "taille": 607016,
+   "empreinte": "f0c77d8fdca80872",
+   "contenu": "Le début du roman (chapitres I à IV)"
   },
   {
    "id": "notredame",
