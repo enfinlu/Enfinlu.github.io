@@ -1,6 +1,6 @@
 {
  "format": 1,
- "maj": "2026-11-08",
+ "maj": "2026-11-11",
  "livres": [
   {
    "id": "belami",
@@ -77,6 +77,25 @@
    "empreinte": "699bec91cca4aade",
    "contenu": "Le roman entier (trois livres, 26 chapitres)",
    "couverture": "boutons/792dbba874105eea.webp"
+  },
+  {
+   "id": "cthulhu",
+   "titre": "L'Appel de Cthulhu",
+   "auteur": "H. P. Lovecraft",
+   "annee": 1928,
+   "points": 0,
+   "couleurs": [
+    "#0f2e2c",
+    "#8fc9a9"
+   ],
+   "resume": "En triant les papiers de son grand-oncle, un jeune Bostonien trouve un étrange bas-relief d'argile et remonte la piste d'un culte secret, de la Louisiane aux mers du Sud.",
+   "fichier": "cthulhu.json",
+   "epoque": "anneesfolles",
+   "inclus": false,
+   "version": 2,
+   "taille": 271586,
+   "empreinte": "d986dbd7ab243ec4",
+   "contenu": "La nouvelle entière (3 chapitres)"
   },
   {
    "id": "horla",
@@ -262,6 +281,12 @@
   }
  ],
  "epoques": [
+  {
+   "id": "anneesfolles",
+   "nom": "Les Années folles",
+   "annees": "1919-1929",
+   "txt": "Après la Grande Guerre : le jazz, les paquebots, les surréalistes et les premiers frissons du fantastique moderne."
+  },
   {
    "id": "belle",
    "nom": "La Belle Époque",
