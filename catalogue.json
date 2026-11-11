@@ -1,6 +1,6 @@
 {
  "format": 1,
- "maj": "2026-11-11",
+ "maj": "2026-11-12",
  "livres": [
   {
    "id": "belami",
@@ -219,14 +219,19 @@
    "titre": "Le Comte de Monte-Cristo",
    "auteur": "Alexandre Dumas",
    "annee": 1844,
-   "points": 65000,
+   "points": 0,
    "couleurs": [
-    "#163a4a",
-    "#9fd7e6"
+    "#142a3e",
+    "#d8b45c"
    ],
-   "resume": "Trahi et emprisonné, Edmond Dantès prépare sa vengeance.",
-   "fichier": null,
-   "epoque": "paris1830"
+   "resume": "À dix-neuf ans, le marin Edmond Dantès a tout pour être heureux, jusqu'au jour où des hommes jaloux décident de le perdre.",
+   "fichier": "montecristo.json",
+   "epoque": "paris1830",
+   "inclus": false,
+   "version": 1,
+   "taille": 154380,
+   "empreinte": "5208008615ecbc5e",
+   "contenu": "Les chapitres I à IV (sur 117)"
   },
   {
    "id": "bovary",
