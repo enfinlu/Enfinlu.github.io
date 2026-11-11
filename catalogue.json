@@ -329,10 +329,10 @@
    "fichier": "notredame.json",
    "epoque": "moyenage",
    "inclus": false,
-   "version": 2,
-   "taille": 219754,
-   "empreinte": "ee700234914e2e07",
-   "contenu": "Le livre I (6 chapitres)"
+   "version": 3,
+   "taille": 427904,
+   "empreinte": "caa37a19de4ca986",
+   "contenu": "Les livres I et II (13 chapitres)"
   }
  ],
  "epoques": [
