@@ -289,14 +289,19 @@
    "titre": "Notre-Dame de Paris",
    "auteur": "Victor Hugo",
    "annee": 1831,
-   "points": 40000,
+   "points": 0,
    "couleurs": [
     "#3b3355",
     "#d9cff2"
    ],
-   "resume": "Esmeralda, Quasimodo et Frollo, à l’ombre de la cathédrale.",
-   "fichier": null,
-   "epoque": "moyenage"
+   "resume": "Dans le Paris de 1482, une jeune danseuse bohémienne et sa chèvre savante attirent tous les regards, à l'ombre de Notre-Dame.",
+   "fichier": "notredame.json",
+   "epoque": "moyenage",
+   "inclus": false,
+   "version": 1,
+   "taille": 218175,
+   "empreinte": "bb2c3642803cfce9",
+   "contenu": "Le livre I (6 chapitres)"
   }
  ],
  "epoques": [
