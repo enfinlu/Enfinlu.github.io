@@ -289,12 +289,17 @@
    "annee": 1874,
    "points": 0,
    "couleurs": [
-    "#3a1f1f",
-    "#e8b7a0"
+    "#4A1C1C",
+    "#F0D9A8"
    ],
-   "resume": "1793, en Vendée : un vieux marquis, un jeune chef républicain et trois enfants pris dans la guerre.",
-   "fichier": null,
-   "epoque": "revolution"
+   "resume": "En 1793, un vieux marquis débarque en Bretagne pour soulever les paysans contre la République ; au milieu de la guerre, une mère cherche ses trois enfants.",
+   "fichier": "quatrevingttreize.json",
+   "epoque": "revolution",
+   "inclus": false,
+   "version": 1,
+   "taille": 1292915,
+   "empreinte": "c354ba1b2bb914bc",
+   "contenu": "Le roman entier (16 chapitres)"
   },
   {
    "id": "mousquetaires",
