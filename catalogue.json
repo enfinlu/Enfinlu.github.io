@@ -249,10 +249,10 @@
    "fichier": "montecristo.json",
    "epoque": "paris1830",
    "inclus": false,
-   "version": 1,
-   "taille": 154380,
-   "empreinte": "5208008615ecbc5e",
-   "contenu": "Les chapitres I à IV (sur 117)"
+   "version": 2,
+   "taille": 350834,
+   "empreinte": "db658affd29f6852",
+   "contenu": "Les chapitres I à VIII (sur 117)"
   },
   {
    "id": "bovary",
