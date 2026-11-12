@@ -338,6 +338,25 @@
    "taille": 591340,
    "empreinte": "e507dd4add7f20ad",
    "contenu": "Les livres I à III (15 chapitres)"
+  },
+  {
+   "id": "nuits",
+   "titre": "Les Mille et Une Nuits",
+   "auteur": "Antoine Galland",
+   "annee": 1704,
+   "points": 0,
+   "couleurs": [
+    "#0E3B43",
+    "#E2B254"
+   ],
+   "resume": "Pour arrêter un sultan qui fait mourir chaque matin l'épouse de la veille, la fille de son vizir l'épouse, et commence chaque nuit une histoire qu'elle s'arrange pour ne pas finir avant l'aube.",
+   "fichier": "nuits.json",
+   "epoque": "bagdad",
+   "inclus": false,
+   "version": 1,
+   "taille": 464424,
+   "empreinte": "ca4d926aaa5c76be",
+   "contenu": "Saison 1 : les quatre premiers contes (14 chapitres)"
   }
  ],
  "epoques": [
@@ -394,6 +413,12 @@
    "nom": "Le Moyen Âge",
    "annees": "1482",
    "txt": "Paris à l'ombre de sa cathédrale, à la fin du Moyen Âge."
+  },
+  {
+   "id": "bagdad",
+   "nom": "Le Bagdad des califes",
+   "annees": "vers 800",
+   "txt": "Haroun al-Rachid règne à Bagdad, la ville la plus riche du monde : marchands, savants, conteurs… et génies."
   }
  ]
 }
